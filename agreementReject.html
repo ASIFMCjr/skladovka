@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Cuprum:wght@700&family=Inter:wght@400;600&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <!-- Инфо об отказе от договора аренды -->
+        <div class="agreement">
+            <center><h1 class="pageHeading">Уведомление об отказе от договора аренды</h1></center>
+            <!-- Номер договора и число -->
+            <div class="agreementInfo-name m-20"><img class="agreementInfo-img" src="assets/agreement.svg" alt="Agreement"/>Договор такой-то от 05.03.2023</div>
+            
+            <!-- Договор аккордеон -->
+            <details open class="agreementInfo-mainAccordion m-50">
+                <!-- Аккордеон внешняя часть -->
+                <summary class="br-12 m-20 btn agreementInfo-mainAccordion__face">Основная информация <img class="accordionArrow" style="margin-left: 200px;" src="assets/arrow.svg" alt="arrow"/></summary>
+                <!-- Аккордеон внутрення часть -->
+                <div class="br-12 agreementInfo-mainAccordion__inner">
+                    <!-- Аккордеон внешняя часть элемент -->
+                    <div class="agreementInfo-mainAccordion__inner_item">
+                        <ul>
+                            <li>Статус: <span class="greenText">действителен</span></li>
+                            <li><span class="blueText">Склад</span></li>
+                        </ul>
+                    </div>
+                    <div class="agreementInfo-mainAccordion__inner_item">
+                        <ul>
+                            <li>Бокс № </li>
+                            <li>Тариф: </li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Календарь -->
+            <div class="calendar m-50">
+                <p class="calendar-heading">Выберите дату <b>прекращения аренды:</b> <img src="assets/questionMark.svg" alt="aboutRejection"/> </p>
+                <div class="br-12 calendar-block">
+                    <div class="m-20 calendar-block__dropDowns">
+                        <select class="calendar-block__dropDowns_element" name="monthPicker" id="monthPicker">
+                            <option value="Январь">Январь</option>
+                            <option value="Февраль">Февраль</option>
+                            <option value="Март">Март</option>
+                            <option value="Апрель">Апрель</option>
+                            <option value="Май">Май</option>
+                            <option value="Июнь">Июнь</option>
+                            <option value="Июль">Июль</option>
+                            <option value="Август">Август</option>
+                            <option value="Сентябрь">Сентябрь</option>
+                            <option value="Октябрь">Октябрь</option>
+                            <option value="Ноябрь">Ноябрь</option>
+                            <option value="Декабрь">Декабрь</option>
+                        </select>
+                        <select class="calendar-block__dropDowns_element" name="yearPicker" id="yearPicker">
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                            <option value="2033">2033</option>
+                            <option value="2034">2034</option>
+                        </select>
+                    </div>
+                    <div class="calendar-block__picker">
+                        <div>ПН</div>
+                        <div>ВТ</div>
+                        <div>СР</div>
+                        <div>ЧТ</div>
+                        <div>ПТ</div>
+                        <div>СБ</div>
+                        <div>ВС</div>
+                        
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                        <div>13</div>
+                        <div>14</div>
+
+                        <div>15</div>
+                        <div>16</div>
+                        <div>17</div>
+                        <div>18</div>
+                        <div>19</div>
+                        <div>20</div>
+                        <div>21</div>
+                        
+                        <div>22</div>
+                        <div>23</div>
+                        <div>24</div>
+                        <div>25</div>
+                        <div>26</div>
+                        <div>27</div>
+                        <div>28</div>
+                        
+                        <div>29</div>
+                        <div>30</div>
+                        <div>31</div>
+                        <div class="notActiveDay">1</div>
+                        <div class="notActiveDay">2</div>
+                        <div class="notActiveDay">3</div>
+                        <div class="notActiveDay">4</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modalRejectDoc" class="overlay">
+                <div class="popup">
+                    
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <object data="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf" type="application/pdf" width="100%" height="500px">
+                            <p>Unable to display PDF file. <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">Download</a> instead.</p>
+                          </object>
+                    </div>
+                    <a href="#modalRejectDocNotify"><button class="br-12 m-20 btn greenBtn rejectModalBtn">Подписать и отправить</button></a>
+                    
+                    <button class="br-12 m-20 btn grayBtn">Подписать и отправить</button>
+                </div>
+            </div>
+
+            <div id="callBackRejectDoc" class="overlay">
+                <div class="popup">
+                    
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <object data="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf" type="application/pdf" width="100%" height="500px">
+                            <p>Unable to display PDF file. <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">Download</a> instead.</p>
+                          </object>
+                    </div>
+                    <a href="#modalCallBackRejectDocNotify"><button class="br-12 m-20 btn greenBtn rejectModalBtn">Подписать и отправить</button></a>
+                    
+                    <button class="br-12 m-20 btn grayBtn">Подписать и отправить</button>
+                </div>
+            </div>
+    
+            <div id="modalRejectDocNotify" class="notifyOverlay">
+                <div class="popup">
+                    
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <img class="modalFingerArrowImg" src="assets/fingerArrow.svg" alt="notify"/>
+                        <p class="modalRejectDocNotify-text"><b>Уведомление о намерении расторгнуть договор аренды направлено</b> администрации. В течение 24 часов администратор свяжется с вами.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="modalCallBackRejectDocNotify" class="notifyOverlay">
+                <div class="popup">
+                    
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <img class="modalFingerArrowImg" src="assets/fingerArrow.svg" alt="notify"/>
+                        <p class="modalRejectDocNotify-text"><b>Запрос на отзыв Уведомления о расторжении договора аренды отправлен.</b> В ближайшее время администратор свяжется с вами.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Кнопка отправки уведомления -->
+            <center><a href="#modalRejectDoc"><button class="br-12 m-20 btn orangeBtn orangeBtn-reject">Сформировать уведомление</button></a></center>
+            <center><button class="br-12 m-20 btn grayBtn orangeBtn-reject">Сформировать уведомление</button></center>
+        
+            <div class="colorBtnsRow m-50">
+                <button class="br-12 btn invertGreenBtn">Уведомление отправлено</button>
+                <a href="#callBackRejectDoc"><button class="br-12 btn orangeBtn" style="font-size: 19px;">Отменить уведомление об отказе</button></a>
+            </div>
+
+
+            <div class="threeDots m-50">
+                <img alt="dot" src="assets/dot.svg" class="threeDots-element"/>
+                <img alt="dot" src="assets/dot.svg" class="threeDots-element"/>
+                <img alt="dot" src="assets/dot.svg" class="threeDots-element"/>
+                
+            </div>
+
+            <div class="boxReturn m-50">
+                <div class="boxReturn-first m-20"><label class="checkmarkLabel"><input type="checkbox"/> <span class="checkmark"></span> Бокс свободен</label></div>
+                <div class="m-20"><button class="br-12 btn invertOrangeBtn">Я его сегодня возвращаю</button></div>
+                <div><a style="color: #008DA9;"><u>Правила возврата бокса</u></a></div>
+            </div>
+        </div>
+        
+
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Cuprum:wght@700&family=Inter:wght@400;600&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main" style="width: 950px;">
+
+        <!-- Инфо о договоре -->
+        <div class="agreement">
+            <center><h1 class="pageHeading">Изменение персональных данные</h1></center>
+        
+            <!-- Элемент (договор) -->
+            <div class="qualityService m-20" style="width: 950px;">
+
+                <div class="changePersonalData-inputs">
+                    <div class="changePersonalData-inputs__item">
+                        <div class="br-12 m-20 btn smallGrayBtn">
+                            <img src="assets/lock.svg" alt="lock"/><input class="qualityService-input" placeholder="Фамилия"/>
+                        </div>
+                        <div class="br-12 m-20 btn smallGrayBtn">
+                            <img src="assets/lock.svg" alt="lock"/><input class="qualityService-input" placeholder="Имя"/>
+                        </div>
+                        <div class="br-12 m-20 btn smallGrayBtn">
+                            <img src="assets/lock.svg" alt="lock"/><input class="qualityService-input" placeholder="Отчество"/>
+                        </div>
+                        <div class="br-12 m-20 btn smallGrayBtn">
+                            <img src="assets/lock.svg" alt="lock"/><input class="qualityService-input" placeholder="Электронная почта"/>
+                        </div>
+                        <div class="br-12 m-20 btn smallGrayBtn">
+                            <img src="assets/lock.svg" alt="lock"/><input class="qualityService-input" placeholder="Номер телефона"/>
+                        </div>
+                        <center class="m-20"><i  style="color: #747474;font-size: 18px;">Введите новый номер телефона и нажмите<br/> кнопку “Подтвердить”</i></center>
+                <center><div class="br-12 m-20 btn smallGrayBtn">
+                    <input class="qualityService-input" placeholder="Введите новый номер телефона"/>
+                </div></center>
+                <center><div class="br-12 m-20 btn smallGrayBtn">
+                    <input class="qualityService-input" placeholder="Код подтверждения из СМС"/>
+                </div></center>
+                    </div>
+                    
+                </div>
+                
+                
+              
+            </div>
+            <center><a href="#"><button class="br-12 btn grayBtn  m-20">Подтвердить</button></a></center>
+            <center><a href="#"><button class="br-12 btn invertGreenBtn  m-20">Подтвердить</button></a></center>
+            <center><a href="#"><button style="padding-left: 20px;" class="br-12 btn greenBtn  m-20">
+                <svg style="float: left;" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 17" fill="none">
+                    <path d="M1 8.5L9.4 15L22 2" stroke="#77E548" stroke-width="3"/>
+                    </svg>
+                <span style="margin-left: -20px;"> Номер подтвержден</span></button></a></center>
+            <center><div class="changePersonalData-passportPhotos__item">
+                <div class="changePersonalData-passportPhotos__item_part changePersonalData-passportPhotos__item_partInfo selfiePassport
+                 m-20"><label><input style="opacity: 0;position: absolute;" type="file" />Селфи с паспортом</label></div>
+                <div class="changePersonalData-passportPhotos__item_part changePersonalData-passportPhotos__item_partInput"><img alt="photo"/>asdasdsdada<a class="" style="text-decoration: none;float: right;margin-left: 10px;" href="#">&times;</a></div>
+            </div></center>
+            <center><label class="checkmarkLabel m-50"><input type="checkbox"/> <span class="checkmark"></span> Я даю своё согласие на &nbsp;<a href="#"> <u style="color: #008DA9;"> обработку персональных данных</u></a></label></center>
+            <center><a href="#modalChangePersonalData"><button class="br-12 btn blueBtn blueBtn-pdf m-20">Продолжить</button></a></center>
+            <center><a href="#"><button class="br-12 btn grayBtn  m-20">Продолжить</button></a></center>
+
+           
+            <div id="modalChangePersonalData" class="overlay" style="top: 10vh;">
+                <div class="popup">
+                    
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <object data="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf" type="application/pdf" width="100%" height="500px">
+                            <p>Unable to display PDF file. <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">Download</a> instead.</p>
+                          </object>
+                    </div>
+                    <a href="changePersonalDataConfirm.html"><button class="br-12 m-20 btn greenBtn rejectModalBtn">Подписать и отправить</button></a>
+                    
+                    <!-- <button class="br-12 m-20 btn grayBtn">Подписать и отправить</button> -->
+                </div>
+            </div>
+
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>

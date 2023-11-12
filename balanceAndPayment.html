@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Cuprum:wght@700&family=Inter:wght@400;600&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <!-- Инфо о договоре -->
+        <div class="agreement">
+            <center><h1 class="pageHeading">Баланс и оплата</h1></center>
+            
+                <!-- Договор аккордеон -->
+                <details class="agreementInfo-mainAccordion m-20">
+                    <!-- Аккордеон внешняя часть -->
+                    <summary class="br-12 m-20 btn balanceAndPayment-mainAccordion__face grayBAP">Баланс: - <img class="accordionArrow" style="margin-left: 300px;" src="assets/arrow.svg" alt="arrow"/></summary>
+                    <!-- Аккордеон внутрення часть -->
+                    <div class="br-12 balanceAndPayment-mainAccordion__inner">
+                        
+                        
+                    </div>
+                </details>
+
+                <details class="agreementInfo-mainAccordion m-20">
+                    <!-- Аккордеон внешняя часть -->
+                    <summary class="br-12 m-20 btn balanceAndPayment-mainAccordion__face orangeBAP">Счета к оплате
+                        <svg style="margin-left: 120px;" class="accordionArrow" width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 15L13.3 2L1.6 15" stroke="#FF6B00" stroke-width="2"/>
+                            </svg>
+                            </summary>
+                    <!-- Аккордеон внутрення часть -->
+                    <div class="br-12 balanceAndPayment-mainAccordion__inner">
+                        
+                        В данный момент активных счетов нет
+                    </div>
+                </details>
+
+                <!-- серая кнопка, если надо то засунуть в див с двумя кнопками -->
+                <center><button style="font-size: 19px;" class="br-12 m-20 btn grayBtn">Оплатить</button></center>
+                
+
+            </div>
+           
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Cuprum:wght@700&family=Inter:wght@400;600&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <!-- Инфо о договоре -->
+        <div class="agreement">
+            <center><h1 class="pageHeading">Договор</h1></center>
+            
+            <!-- Элемент (договор) -->
+            <div class="agreementItem m-50">
+                <!-- Номер договора и число -->
+                <div class="emptyAgreementInfo-name m-20"><img class="agreementInfo-img" src="assets/agreement.svg" alt="Agreement"/>В данный момент у вас нет активных договоров</div>
+            
+                <!-- Договор аккордеон -->
+                <details class="agreementInfo-mainAccordion m-20">
+                    <!-- Аккордеон внешняя часть -->
+                    <summary style="padding: 12px 0 0 0;" class="br-12  btn grayBtn center">Основная информация <img class="accordionArrow" style="margin-right: -60px; margin-left: 10px;" src="assets/arrow.svg" alt="arrow"/></summary>
+                    <!-- Аккордеон внутрення часть -->
+                    <div style="margin-top: 20px;" class="br-12 emptyAgreementInfo-mainAccordion__inner">
+                        <!-- Аккордеон внешняя часть элемент -->
+                        
+                    </div>
+                </details>
+
+                <!-- серая кнопка, если надо то засунуть в див с двумя кнопками -->
+                <center><button style="font-size: 19px;" class="br-12 m-20 btn grayBtn ">Открыть PDF-файл</button></center>
+                <!-- <br/> -->
+                <center><button style="font-size: 19px;" class="br-12 m-20 btn grayBtn ">Отказаться от договора</button></center>
+                
+             
+
+            </div>
+          
+        </div>
+        
+    </div>
+    
+</body>
+</html>

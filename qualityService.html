@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Cuprum:wght@700&family=Inter:wght@400;600&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <!-- Инфо о договоре -->
+        <div class="agreement">
+            <center><h1 class="pageHeading">Служба качества</h1></center>
+            
+            <!-- Элемент (договор) -->
+            <div class="qualityService m-50">
+                <div class="br-12 m-20 btn smallGrayBtn">
+                    <input class="qualityService-input" placeholder="Фамилия Имя Отчество"/>
+                </div>
+                <div class="br-12 m-20 btn smallGrayBtn">
+                    <input class="qualityService-input" placeholder="Электронная почта"/>
+                </div>
+                <div class="br-12 m-20 btn smallGrayBtn">
+                    <input class="qualityService-input" placeholder="Номер телефона"/>
+                </div>
+
+
+                <select class="br-12 m-20 qualityService__dropDowns_element qualityService__dropDowns_element-bgGreen" name="monthPicker" id="monthPicker">
+                    <option value="Тема сообщения">Тема сообщения</option>
+                    
+                </select>
+                <select class="br-12 m-20 qualityService__dropDowns_element qualityService__dropDowns_element-bgBlue" name="monthPicker" id="monthPicker">
+                    <option value="Выбрать склад">Выбрать склад</option>
+                    
+                </select>
+
+                <textarea class="br-12 qualityService-textarea" placeholder="Объем символов в сообщении не должен превышать 1000 символов" name="" id=""></textarea>
+                <div class="m-20" style="text-align: right;width: 100%; color: #747474;font-size: 18px;">тут счетчик ебашь</div>
+
+
+                <center><a href="#"><button class="br-12 btn blackBtn pinFilebg"><label><input type="file" id="myFile" name="filename" style="opacity: 0;position: absolute;">Прикрепить файл</label></button></a></center>
+                <!-- <input type="file" id="myFile" name="filename"> -->
+                <center><p ><i style="font-size: 16px;">Допускаются форматы JPG, PNG, TIFF, не более 5 МБ</i></p></center>
+                
+                
+                <center><a href="#"><button class="br-12 btn orangeBtn">Отправить</button></a></center>
+                <center><a href="#"><button class="br-12 btn invertGreenBtn">Отправлено</button></a></center>
+                    
+
+            </div>
+          
+        </div>
+        
+    </div>
+    
+</body>
+</html>

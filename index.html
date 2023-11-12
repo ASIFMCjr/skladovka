@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Cuprum:wght@700&family=Inter:wght@400;600&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <!-- Инфо о договоре -->
+        <div class="agreement">
+            <center><h1 class="pageHeading">Договор</h1></center>
+            
+            <!-- Элемент (договор) -->
+            <div class="agreementItem m-50">
+                <!-- Номер договора и число -->
+                <div class="agreementInfo-name m-20"><img class="agreementInfo-img" src="assets/agreement.svg" alt="Agreement"/>Договор такой-то от 05.03.2023</div>
+            
+                <!-- Договор аккордеон -->
+                <details class="agreementInfo-mainAccordion m-20">
+                    <!-- Аккордеон внешняя часть -->
+                    <summary class="br-12 m-20 btn agreementInfo-mainAccordion__face"><img style="margin-right: 200px;" src="assets/warning.svg" alt="warning"/>Основная информация <img class="accordionArrow" style="margin-left: 200px;" src="assets/arrow.svg" alt="arrow"/></summary>
+                    <!-- Аккордеон внутрення часть -->
+                    <div class="br-12 agreementInfo-mainAccordion__inner">
+                        <!-- Аккордеон внешняя часть элемент -->
+                        <div class="agreementInfo-mainAccordion__inner_item">
+                            <ul>
+                                <li>Статус: <span class="greenText">дейс</span><span class="orangeText">твит</span><span class="redText">елен</span></li>
+                                <li><span class="blueText">Склад</span></li>
+                            </ul>
+                        </div>
+                        <div class="agreementInfo-mainAccordion__inner_item">
+                            <ul>
+                                <li>Бокс № </li>
+                                <li>Тариф: </li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Блок с двумя кнопками (оранжевая и синяя) -->
+                <div class="colorBtnsRow m-20">
+                    <button class="br-12 btn blueBtn blueBtn-pdf">Открыть PDF-файл</button>
+                    <a href="agreementReject.html"><button class="br-12 btn orangeBtn orangeBtn-reject">Отказаться от договора</button></a>
+                    
+                </div>
+
+                <!-- серая кнопка, если надо то засунуть в див с двумя кнопками -->
+                <button style="font-size: 19px;" class="br-12 m-20 btn grayBtn">Отменить уведомление об отказе</button>
+                
+                <!-- Уведомление -->
+                <div class="notify">
+                    <div class="popup">
+                        
+                        <div class=" contentFlex">
+                            <img width="40" class="fingerArrowImg" src="assets/fingerArrow.svg" alt="notify"/>
+                            <p class="RejectDocNotify-text"><b class="RejectDocNotify-text">Запрос на отзыв Уведомления о расторжении договора аренды отправлен.</b> <br/>В ближайшее время администратор свяжется с вами.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="agreementItem m-50">
+                <div class="agreementInfo-name m-20"><img class="agreementInfo-img" src="assets/document.svg" alt="Agreement"/>Дополнительное соглашение № 1 к договору № 100489</div>
+            
+                <!-- Договор аккордеон -->
+                <details class="agreementInfo-mainAccordion m-20">
+                    <!-- Аккордеон внешняя часть -->
+                    <summary class="br-12 m-20 btn agreementInfo-mainAccordion__face">Основная информация <img class="accordionArrow" style="margin-left: 200px;" src="assets/arrow.svg" alt="arrow"/></summary>
+                    <!-- Аккордеон внутрення часть -->
+                    <div class="br-12 agreementInfo-mainAccordion__inner">
+                        <!-- Аккордеон внешняя часть элемент -->
+                        <div style="width: 100%; padding: 0 20px 0 0;">
+                            <ul class="inlineLi">
+                                <li>Статус: <span class="greenText">дейс</span><span class="orangeText">твит</span><span class="redText">елен</span></li>
+                                <li><span class="blueText">Склад</span></li>
+                                <li>Бокс № </li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Блок с двумя кнопками (оранжевая и синяя) -->
+                <div class="colorBtnsRow m-20">
+                    <button class="br-12 btn blueBtn blueBtn-pdf">Открыть PDF-файл</button>
+                    <a href="agreementReject.html"><button class="br-12 btn orangeBtn orangeBtn-reject">Отказаться от договора</button></a>
+                    
+                </div>
+
+                <div class="notify">
+                    <div class="popup">
+                        
+                        <div class=" contentFlex">
+                            <img width="40" class="fingerArrowImg" src="assets/fingerArrow.svg" alt="notify"/>
+                            <p class="RejectDocNotify-text"><b class="RejectDocNotify-text">Запрос отправлен.</b> В ближайшее время администратор свяжется с вами.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Cuprum:wght@700&family=Inter:wght@400;600&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <!-- Инфо о договоре -->
+        <div class="agreement">
+            <center><h1 class="pageHeading">Личные данные</h1></center>
+               
+            <!-- Элемент (договор) -->
+            <div class="qualityService m-50">
+                <div class="br-12 m-20 btn smallGrayBtn">
+                    <input class="qualityService-input" placeholder="Фамилия Имя Отчество"/>
+                </div>
+                <div class="br-12 m-20 btn smallGrayBtn">
+                    <input class="qualityService-input" placeholder="Электронная почта"/>
+                </div>
+                <div class="br-12 m-20 btn smallGrayBtn">
+                    <input class="qualityService-input" placeholder="Номер телефона"/>
+                </div>
+
+
+
+              
+            </div>
+            <center><a href="#"><button class="br-12 btn blueBtn blueBtn-pdf m-20">Cохранить</button></a></center>
+            <center><a href="#"><button class="br-12 btn greenBtn blueBtn-pdf m-20">Изменения сохранены</button></a></center>
+            
+            <center><a href="#changePassword"><button class="br-12 btn orangeBtn m-20">Сменить пароль</button></a></center>
+                
+            <div id="changePassword" class="changePasswordOverlay changePasswordOverlayMoreHeight">
+                <div class="popup">
+                    
+                    <a class="close" href="#" style="padding: 10px 30px;">&times;</a>
+                    <div class="content">
+                        <center><div class="usefull-item__heading m-20">Настройка пароля</div></center>
+                    
+                        <div class="br-12 m-15 btn smallGrayBtn" style="height: 35px;border-radius: 8px;">
+                            <input style="font-size:14px;" class="qualityService-input" placeholder="Cтарый пароль"/>
+                        </div>
+                        <div class="br-12 m-15 btn smallGrayBtn" style="height: 35px;border-radius: 8px;">
+                            <input style="font-size:14px;" class="qualityService-input" placeholder="Новый пароль"/>
+                        </div>
+                        <div class="br-12 m-15 btn smallGrayBtn" style="height: 35px;border-radius: 8px;">
+                            <input style="font-size:14px;" class="qualityService-input" placeholder="Подтвердите пароль"/>
+                        </div>
+
+                        <!-- При добавлении красного текста добавить в строку 40 класс changePasswordOverlayMoreHeight -->
+                        <center><p style="margin: 0;"><i style="font-size: 14px;color: #F93311;">Старый пароль введен неверно</i></p></center>
+                        <!-- <center><p style="margin: 0;"><i style="font-size: 14px;color: #F93311;">Пароли не совпадают</i></p></center> -->
+                        
+                        <p style="margin: 0;line-height: 10px;"><i style="font-size: 10px;">Пароль должен быть от 8 символов, состоять
+                            из букв и цифр с разным регистром. Минимум
+                            1 заглавная, 1 прописная и 1 цифра.</i></p>
+                    </div>
+                    <a href="#"><button class="br-12 m-20 btn orangeBtn changePasswordModalBtn" style="width: 75%;left: calc(50% - 75%/2);top: calc(100% - 60px);height: 35px;border-radius: 8px;font-size: 16px;">Сменить пароль</button></a>
+                    <!-- <a href="#"><button class="br-12 m-20 btn greenBtn changePasswordModalBtn" style="width: 75%;left: calc(50% - 75%/2);top: calc(100% - 60px);height: 35px;border-radius: 8px;font-size: 16px;">Пароль сохранён</button></a> -->
+                    
+                </div>
+            </div>
+          
+        </div>
+        
+    </div>
+    
+</body>
+</html>
