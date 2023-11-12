@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Cuprum:wght@700&family=Inter:wght@400;600&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <!-- Инфо о договоре -->
+        <div class="agreement">
+            <center><h1 class="pageHeading">Договор</h1></center>
+            
+            <!-- Элемент (договор) -->
+            <div class="agreementItem m-50">
+                <!-- Номер договора и число -->
+                <div class="agreementInfo-name m-20"><img class="agreementInfo-img" src="../assets/agreement.svg" alt="Agreement"/>Договор такой-то от 05.03.2023</div>
+            
+                <!-- Договор аккордеон -->
+                <details class="agreementInfo-mainAccordion m-20">
+                    <!-- Аккордеон внешняя часть -->
+                    <summary class="br-12 m-20 btn agreementInfo-mainAccordion__face">Основная информация <img class="accordionArrow" style="margin-left: 200px; width: 30px;" src="../assets/arrow.svg" alt="arrow"/></summary>
+                    <!-- Аккордеон внутрення часть -->
+                    <div class="br-12 agreementInfo-mainAccordion__inner">
+                        <!-- Аккордеон внешняя часть элемент -->
+                        <div class="agreementInfo-mainAccordion__inner_item">
+                            <ul>
+                                <li>Статус: <span class="greenText">дейс</span><span class="orangeText">твит</span><span class="redText">елен</span></li>
+                                <li><span class="blueText">Склад</span></li>
+                            </ul>
+                        </div>
+                        <div class="agreementInfo-mainAccordion__inner_item">
+                            <ul>
+                                <li>Бокс № </li>
+                                <li>Тариф: </li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Блок с двумя кнопками (оранжевая и синяя) -->
+                    <button class="m-20 br-12 btn blueBtn blueBtn-pdf mobileBtn">Открыть PDF-файл<img src="../assets/warning.svg" alt="warning"/></button>
+                    <a href="agreementReject.html"><button class="m-20 br-12 btn orangeBtn orangeBtn-reject mobileBtn">Отказаться от договора</button></a>
+                    
+
+                <!-- серая кнопка, если надо то засунуть в див с двумя кнопками -->
+                <button style="font-size: 19px;" class="br-12 m-20 btn grayBtn mobileBtn">Отменить уведомление об отказе</button>
+                
+                
+                
+                
+                <!-- Блок служба подеержки три точки назад -->
+                <div style="display: flex;width: 100%;flex-direction: column;justify-content: center;align-items: center;">
+                    <div class="threeDots m-20">
+                        <img width="10" alt="dot" src="../assets/dot.svg" class="threeDots-element"/>
+                        <img width="10" alt="dot" src="../assets/dot.svg" class="threeDots-element"/>
+                        <img width="10" alt="dot" src="../assets/dot.svg" class="threeDots-element"/>
+                        
+                    </div>
+                    
+                    <button style="font-size: 19px;display: inline-flex;flex-direction: row;justify-content: center;align-items: center;" class="br-12 m-20 btn invertGreenBtn mobileBtnSmall">
+                        <img style="margin-right: 10px;" width="20" src="../assets/whatsappWhite.png" alt="whatsapp">
+                        Служба поддержки</button>
+                    <div class="m-20"><img src="../assets/arrowLeft.svg" alt="arrow"><span style="color: #FF6B00;font-weight: 700;margin-left: 10px;">Назад</span></div>
+                </div>
+                
+               
+                <!-- Уведомление -->
+                <div class="notify">
+                    <div class="popup">
+                        
+                        <div class=" contentFlex">
+                            <img width="40" class="fingerArrowImg" src="../assets/fingerArrow.svg" alt="notify"/>
+                            <p class="RejectDocNotify-text"><b class="RejectDocNotify-text">Запрос на отзыв Уведомления о расторжении договора аренды отправлен.</b> <br/>В ближайшее время администратор свяжется с вами.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>
